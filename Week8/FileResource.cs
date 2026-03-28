@@ -8,10 +8,13 @@ public class FileResource : Resource, IDisposable
     public override void Open()
     {
         bool IsOpen = true;
+        Console.WriteLine("The file is open");
     }
     public override void Close()
     {
-        Dispose();
+        bool IsOpen = false;
+        Console.WriteLine("The file is closed");
+
     }
     public void Dispose()
     {

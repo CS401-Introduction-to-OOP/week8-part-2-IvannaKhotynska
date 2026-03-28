@@ -8,10 +8,12 @@ public class NetworkResource : Resource, IDisposable
     public override void Open()
     {
         bool IsOpen = true;
+        Console.WriteLine("The network is open");
     }
     public override void Close()
     {
-        Dispose();
+        bool IsOpen = false;
+        Console.WriteLine("The network is closed");
     }
     public void Dispose()
     {

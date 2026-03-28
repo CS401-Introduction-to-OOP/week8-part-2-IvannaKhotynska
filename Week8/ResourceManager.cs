@@ -12,6 +12,7 @@ public class ResourceManager<T> where T : Resource
         foreach (var resource in _resources)
         {
             resource.Open();
+            
         }
         
     }
